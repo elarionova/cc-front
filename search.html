@@ -1,0 +1,99 @@
+<html>
+	<head>
+	    <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="range.css">
+	    <script>
+	    var num = 2;
+	    	function add()
+	    	{
+	    		if (num<6)
+	    		{
+		    		var el = document.getElementsByClassName('ingredients');
+		    		var inp = document.createElement('input');
+		    		inp.setAttribute('name', 'ing'+num);
+		    		inp.setAttribute('type', 'text');
+		    		inp.setAttribute('placeholder', 'Type ingredients');
+		    		inp.setAttribute('class', 'ingredients');
+		    		el[num-2].parentNode.insertBefore(inp, el[num-2].nextSibling);
+		    		num++;
+		    	}
+	    		
+	    	}
+	    </script>
+	</head>
+	<body>
+		<div class="main_banner">
+			<div class="header">
+				<div class = "header_cell">
+					<img src="icons/ic_search_white_36dp.png">
+				</div>
+				<div class = "header_cell">
+					<img src="icons/ic_note_add_white_36dp.png">
+				</div>
+				<div class = "header_cell">
+					<img src="icons/ic_view_list_white_36dp.png">
+				</div>
+				<div class = "header_cell">
+					<img src="icons/ic_favorite_white_36dp.png">
+				</div>
+				<div class = "header_cell">
+					<img src="icons/ic_info_outline_white_36dp.png">
+				</div>
+				<div class = "header_cell">
+					<img src="icons/ic_login_white_48dp.png">
+				</div>
+				
+		</div>	
+			<!--<img src="i/11145140.jpg">-->	
+		</div>
+		<div class="content">
+
+			
+			<div class="title">Ingredients</div>
+			
+			<input name="ing1" type="text" placeholder="Type ingredients" class="ingredients"> 
+			<div class="plus" onclick="add();">+</div>
+			<div class="vegan">
+				<input type="checkbox" value="vegetarian" class="checkbox">
+				<label for="checkbox">Vegetarian</label>
+			</div>
+			
+			<div class="title">Max Time for cooking</div>
+			<div class = "time">
+				<div class="time_cell" name="hours">00h</div>
+				<div class="time_cell" name="minutes">00m</div>
+				<!--<div class="time_cell" name="seconds">00s</div>-->
+			</div><!--time-->
+			
+			<div class="time_bar">
+				<input type="range" name="time">
+				<!--
+				<div class = "time_controller" name="min_time">-</div>
+				<div class="time_frame">
+					<div class="time_fulfill"></div>
+				</div>
+				<div class = "time_controller" name="min_time">+</div>
+			-->
+			</div><!--time_bar-->
+			
+
+			<select size="1" name="category">
+	  			<option>Category</option>
+	  			<option>Soup</option>
+	  			<option>Salad</option>
+	  			<option>Snacks</option>
+			</select>
+
+			<select size="1" name="cuisine">
+	  			<option>Cuisine</option>
+	  			<option>Italian</option>
+			</select>
+			<div class="title">Author</div>
+			<input name="ing1" type="text" placeholder="Type author name" class="ingredients"> 
+			<!--<div class="error_message">Error message!</div>-->
+			<div class="ok">OK</div>
+		</div><!--content-->
+
+	</body>
+
+</html>

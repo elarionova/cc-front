@@ -1,0 +1,133 @@
+<html>
+	<head>
+<!--		<meta name="viewport" content="width=device-width" />-->
+		<link rel="stylesheet" type="text/css" href="m_style.css">
+	    <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="range.css">
+	    <script>
+	    var num = 2;
+	    	function add()
+	    	{
+	    		if (num<6)
+	    		{
+		    		var el = document.getElementsByClassName('ingredients');
+		    		var inp = document.createElement('input');
+		    		inp.setAttribute('name', 'ing'+num);
+		    		inp.setAttribute('type', 'text');
+		    		inp.setAttribute('placeholder', 'Type ingredients');
+		    		inp.setAttribute('class', 'ingredients');
+		    		el[num-2].parentNode.insertBefore(inp, el[num-2].nextSibling);
+		    		num++;
+		    	}
+	    		
+	    	}
+	    </script>
+	    </head>
+	<body>
+		<div class="main_banner">
+		<div class="header">
+			<div class = "header_cell">
+				<img src="icons/ic_search_white_36dp.png">
+			</div>
+			<div class = "header_cell">
+				<img src="icons/ic_note_add_white_36dp.png">
+			</div>
+			<div class = "header_cell">
+				<img src="icons/ic_view_list_white_36dp.png">
+			</div>
+			<div class = "header_cell">
+				<img src="icons/ic_favorite_white_36dp.png">
+			</div>
+			<div class = "header_cell">
+				<img src="icons/ic_info_outline_white_36dp.png">
+			</div>
+			
+		</div>
+		
+			<!--<img src="i/11145140.jpg">-->	
+		</div>
+		<div class="content">
+
+			<input name="name" type="text" placeholder="Name">
+			<input name="email" type="text" placeholder="Email">
+			<input name="title" type="text" placeholder="Title"> 
+			<textarea class="description" placeholder="Description"></textarea>			
+			
+			<div class="title">Main photo</div>
+			<div class="photo_button">+photo</div>
+			<div class="photo_over">
+				<input class="photo" type="file" name="photo" accept="image/*">	</input>
+			</div>
+
+			<div name="steps">
+				<div class="step" name="step1">
+					<div class="step_left_block">
+						<div class="title">Step #1</div>
+						<textarea class="description" placeholder="Description"></textarea>			
+						
+						<div class="title">Photo for Step #1</div>
+						<div class="photo_button">+photo</div>
+						<div class="photo_over">
+							<input class="photo" type="file" name="photo_1" accept="image/*">	</input>
+						</div>
+					</div><!--step_left_block-->
+
+				<div class="minus">
+					<img src="icons/ic_delete_grey600_24dp.png">
+				</div>
+				
+				</div><!--step-->
+
+
+
+			</div> <!--steps-->
+			<div class="add_step">
+				<div class="plus">+</div>One more step
+			</div>
+
+	
+			<div class="title">Ingredients</div>
+			
+			<input name="ing1" type="text" placeholder="Type ingredients" class="ingredients"> 
+			<div class="plus" onclick="add();">+</div>
+			<div class="vegan">
+				<input type="checkbox" value="vegetarian" class="checkbox">
+				<label for="checkbox">Vegetarian</label>
+			</div>
+			
+			<div class="title">Max Time for cooking</div>
+			<div class = "time">
+				<div class="time_cell" name="hours">00h</div>
+				<div class="time_cell" name="minutes">00m</div>
+				<!--<div class="time_cell" name="seconds">00s</div>-->
+			</div><!--time-->
+			
+			<div class="time_bar">
+				<input type="range" name="time">
+		<!--	<div class = "time_controller" name="min_time">-</div>
+				<div class="time_frame">
+					<div class="time_fulfill"></div>
+				</div>
+				<div class = "time_controller" name="min_time">+</div>
+			-->
+			</div><!--time_bar-->
+			
+
+			<select size="1" name="category">
+	  			<option>Category</option>
+	  			<option>Soup</option>
+	  			<option>Salad</option>
+	  			<option>Snacks</option>
+			</select>
+
+			<select size="1" name="cuisine">
+	  			<option>Cuisine</option>
+	  			<option>Italian</option>
+			</select>
+			<!--<div class="error_message">Error message!</div>-->
+			<div class="ok">Add</div>
+		</div><!--content-->
+
+	</body>
+
+</html>

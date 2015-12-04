@@ -1,0 +1,24 @@
+/*@media screen and (max-device-width: 1024px)
+{
+	body
+	{
+		background-color: red;
+	}
+}
+
+@media screen and (max-device-width: 768px)
+{
+	body 
+	{
+		background-color: green;
+	}
+}
+@media all and (not (max-device-width: 1024px))
+{
+body 
+{
+	background-color: #fffbde;
+}
+}
+
+*/
