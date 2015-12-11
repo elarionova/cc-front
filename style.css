@@ -346,6 +346,28 @@
 		color: #eeeeee;
 
 	}
+	.photo_button>img
+	{
+		padding-top:8px;
+		opacity:0.9;
+	}
+
+	.photo_button>img:first-child
+	{
+	margin-right: -26px;
+	} 
+
+	.upl_photo
+	{
+		overflow: hidden;
+		height:300px;
+		width:70%;
+		margin-bottom: -2%;
+	}
+	.upl_photo>img
+	{
+		width:100%;
+	}
 
 	.step
 	{
