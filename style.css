@@ -99,7 +99,7 @@
 		overflow: hidden;
 		margin: 0;
 		min-width: 360px;
-		
+
 	}
 
 	div.header
@@ -150,6 +150,13 @@
 		color: #FFFFFF;
 	}
 
+	div.active_header_cell
+	{
+		background-color: #F27530;
+		cursor:pointer;
+		color: #FFFFFF;
+	}
+
 	div.ok
 	{
 		width: 30%;
@@ -171,7 +178,7 @@
 		color: #FA3200;
 		text-align:center;
 		width:100%;
-		margin: 3% 0% 3% 0%; 
+		margin: 3% 0% 3% 0%;
 		font-size: 150%;
 	}
 
@@ -179,10 +186,10 @@
 	{
 		width:100%;
 		margin-top: 1%;
-		
+
 	}
 
-	a 
+	a
 	{
 		padding:3%;
 		color:#A0D36E;
@@ -207,7 +214,7 @@
 		cursor:pointer;
 
 	}
-	
+
 	div.minus
 	{
 		opacity:0.7;
@@ -260,13 +267,13 @@
 		width:auto;
 		text-align:center;
 		padding: 5px 10px;
-		
+
 		font-weight: bold;
 		/*height: 100%; */
 		font-size: 25px;
 		background-color: #A0D36E;
 		color: #eeeeee;
-		border-radius: 40px;	
+		border-radius: 40px;
 	}
 
 	.time_controller:first-child
@@ -374,14 +381,14 @@
 
 		height: auto;
 		width: 100%;
-		
+
 		float: left;
 		border-top: 3px dashed #D6D0A3;
 
 	}
 	.step:last-child
 	{
-		margin-bottom: 1%;	
+		margin-bottom: 1%;
 		border-bottom: 3px dashed #D6D0A3;
 	}
 	.step_left_block
@@ -406,7 +413,7 @@
 
 	div.add_step
 	{
-		
+
 		cursor:pointer;
 		font-weight: bold;
 		margin-left: 20px;
@@ -417,7 +424,7 @@
 	{
 		margin-top: 20px;
 		margin-left: -40px;
-		
+
 
 	}
 
@@ -434,7 +441,7 @@
 	{
 		border-top: 2px solid #D6D0A3;
 		border-bottom: 2px solid #D6D0A3;
-		
+
 	}
 
 	li.cat_item:nth-child(2n+1)
@@ -473,7 +480,7 @@
 		opacity:0.7;
 	}
 
-	div.section_title > span 
+	div.section_title > span
 	{
 		display:inline-block;
 		float:right;
@@ -489,7 +496,7 @@
 		height: auto;
 		padding:10px 0;
 		margin-bottom: 1%;
-		background-color: #F5F0CE; 
+		background-color: #F5F0CE;
 		width:100%;
 		display: inline-block;
 		cursor: pointer;
@@ -506,7 +513,7 @@
 		overflow: hidden;
 		width: 15%;
 		float:left;
-		
+
 	}
 
 	div.dish_pic img
@@ -604,7 +611,7 @@
 
 	span.short_info_title
 	{
-		
+
 		font-style: italic;
 		font-size: 120%;
 		display: block;
@@ -619,7 +626,7 @@
 		width: 84%;
 		padding: 0.5% 0;
 		display:inline-block;
-		
+
 
 	}
 
@@ -654,7 +661,7 @@
 	{
 		content: '\2190';
 		/*float:left;*/
-		font-weight: bold; 
+		font-weight: bold;
 		cursor: pointer;
 	}
 
@@ -671,12 +678,12 @@
 	}
 	.gal_arrow
 	{
-		
+
 		cursor: pointer;
 		width: 5%;
 		display:inline-block;
 		vertical-align: middle;
-		
+
 	}
 	.gal_arrow > img
 	{
@@ -816,7 +823,7 @@
 	.controll_icons > img:hover
 	{
 		opacity:1;
-	} 
+	}
 
 	div.faq
 	{
@@ -848,7 +855,7 @@
 		cursor: pointer;
 		/*border-bottom: 2px dashed #D6D0A3;*/
 		width:80%;
-	
+
 
 	}
 
@@ -873,7 +880,7 @@
 	}
 
 	div.half_column
-	{	
+	{
 		width:48%;
 		min-width: 230px;
 		height: auto;
@@ -959,7 +966,6 @@
 	{
 		width: 100%;
 		display: inline-block;
-		background-color: #F5F0CE;
 		opacity: 0.8;
 		margin: 0;
 		/*border-top: 1px solid #BD4504;
@@ -988,4 +994,3 @@
 		vertical-align: top;
 
 	}
-	
