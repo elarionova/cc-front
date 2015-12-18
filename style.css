@@ -219,9 +219,14 @@
 	{
 		opacity:0.7;
 		display:inline-block;
-		padding-right:15px;
+		padding:5px 17px;
 		cursor:pointer;
-		float:right;
+		
+		font-size: 200%;
+		font-weight:bold;
+		border-radius: 30px;
+		background-color: #dc4e00;
+		color:#ffffff;
 	}
 	div.minus:hover
 	{
@@ -367,30 +372,56 @@
 	.upl_photo
 	{
 		overflow: hidden;
-		height:300px;
+		/*height:300px;*/
 		width:70%;
 		margin-bottom: -2%;
+		margin-left: 3%;
 	}
 	.upl_photo>img
 	{
 		width:100%;
 	}
 
+	div.steps
+	{
+		width:100%;
+		height:auto;
+		position: relative;
+	}
+
 	.step
 	{
 
-		height: auto;
+		/*height: auto;*/
 		width: 100%;
-
-		float: left;
+		/*float: left;*/
 		border-top: 3px dashed #D6D0A3;
-
+		position:relative;
 	}
+
 	.step:last-child
 	{
 		margin-bottom: 1%;
 		border-bottom: 3px dashed #D6D0A3;
 	}
+
+	.cross, .add_plus
+	{
+		background-image: url("icons/ic_close_grey600_36dp.png");
+		position:absolute;
+		width: 50px;
+		height: 50px;
+		right:5;
+		cursor: pointer;
+	}
+
+	.add_plus
+	{
+		background-image: url("icons/ic_plus_grey600_36dp.png");
+
+	}
+
+
 	.step_left_block
 	{
 
@@ -411,15 +442,19 @@
 		background-color: #FFFBDE;
 	}
 
-	div.add_step
+	div.adding
 	{
+		width:100%;
+		position:relative;
+		border-bottom: 3px dashed #D6D0A3;
+		cursor: pointer;
 
-		cursor:pointer;
-		font-weight: bold;
-		margin-left: 20px;
-		color: #A0D36E;
+	} 
+
+	div.adding>.title
+	{
+		padding: 10px 0px;
 	}
-
 	ul.cat_list
 	{
 		margin-top: 20px;
@@ -562,11 +597,13 @@
 		font-size: 100%;
 		float:left;
 		display:inline-block;
-		/*border-right: 2px solid #a9a9a9;*/
 		color: #909090;
 		text-align: left;
-
-
+	}
+	
+	div.short_info_mob_title
+	{
+		display:none;
 	}
 
 	div.link
@@ -586,14 +623,14 @@
 		text-align: center;
 
 	}
-	.short_info > div
+	.short_info >.short_info_mob_menu > div:not(.short_info_mob_title)
 	{
 		padding-left: 3%;
 		padding-top: 0.2%;
 		vertical-align: middle;
 		display: inline-block;
 	}
-	.short_info >div> ul, li
+	.short_info >.short_info_mob_menu>div> ul, li
 	{
 		margin: 0;
 		padding:0;

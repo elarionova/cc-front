@@ -1,9 +1,12 @@
+<div class="title">New recipe</div>
 <input name="name" type="text" placeholder="Name">
 <input name="email" type="text" placeholder="Email">
 <input name="title" type="text" placeholder="Title">
 <textarea class="description" placeholder="Description"></textarea>
 
 <div class="title">Main photo</div>
+
+
 <div class="photo_button"><!--+PHOTO-->
 	<img src="icons/ic_plus_white_36dp.png">
 	<img src="icons/ic_camera_white_36dp.png">
@@ -13,10 +16,20 @@
 	<input class="photo" type="file" name="photo_1" accept="image/*">	</input>
 </div>
 
-<div name="steps">
+
+
+
+
+
+
+
+
+
+<div name="steps" class="steps">
 	<div class="step" name="step1">
-		<div class="step_left_block">
+			<div class="cross"></div>
 			<div class="title">Step #1</div>
+			
 			<textarea class="description" placeholder="Description"></textarea>
 
 			<div class="title">Photo for Step #1</div>
@@ -32,27 +45,28 @@
 			<div class="photo_over">
 				<input class="photo" type="file" name="photo_1" accept="image/*">	</input>
 			</div>
-
-		</div><!--step_left_block-->
-
-	<div class="minus">
-		<img src="icons/ic_delete_grey600_24dp.png">
-	</div>
-
-	</div><!--step-->
-
-
+	</div><!--step, step1-->
 
 </div> <!--steps-->
-<div class="add_step">
-	<div class="plus">+</div>One more step
-</div>
+
+	<div class="adding">
+		<div class="add_plus"></div>
+		<div class="title">Step #2</div>
+		
+	</div>
+
+	
+
+
+
 
 
 <div class="title">Ingredients</div>
 
 <input name="ing1" type="text" placeholder="Type ingredients" class="ingredients">
 <div class="plus" onclick="add();">+</div>
+<input name="ing1" type="text" placeholder="Type ingredients" class="ingredients">
+<div class="minus" onclick="add();">-</div>
 <div class="vegan">
 	<input type="checkbox" id="check" value="vegetarian" class="checkbox">
 	<label for="check">Vegetarian</label>
