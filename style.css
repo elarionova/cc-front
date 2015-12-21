@@ -5,6 +5,7 @@
 		margin:0;
 		font-family: verdana;
 		min-width: 360px;
+		font-size: 100%;
 
 	}
 
@@ -88,7 +89,7 @@
 		padding: 2% 0% 0% 0%;
 		width: 100%;
 		height: auto;
-		box-shadow: 0 -5px 15px -5px #000000;
+		/*box-shadow: 0 -5px 15px -5px #000000;*/
 		min-width: 360px;
 	}
 	div.main_banner
@@ -537,7 +538,27 @@
 		cursor: pointer;
 
 	}
+	.dish_cat_pic
+	{
+		position: absolute;
+    	right: 0;
+    	opacity: 0.5;
+	}
 
+	.dish_wrapper
+	{
+		width:82%;
+		display:inline-block;
+		vertical-align: top;
+	}
+	
+	.dish_wrapper_expand
+	{
+		width:72%;
+		display:inline-block;
+		vertical-align: top;
+	}
+	
 	div.dish_item:last-child
 	{
 		margin:0;
@@ -547,14 +568,31 @@
 		padding-right: 1%;
 		overflow: hidden;
 		width: 15%;
-		float:left;
+		display:inline-block;
+		vertical-align: top;
+
+	}
+
+	div.dish_pic_expand
+	{
+		padding-right: 1%;
+		overflow: hidden;
+		width: 25%;
+		display:inline-block;
+		vertical-align: top;
 
 	}
 
 	div.dish_pic img
 	{
 		width:100%;
-		/*height: auto;*/
+		
+	}
+
+	div.dish_pic_expand>img
+	{
+		width:100%;
+		
 	}
 
 	div.dish_title
@@ -565,8 +603,19 @@
 		width: 70%;
 		font-size: 150%;
 		color: #dc4e00;
-		display:inline;
-		float: left;
+	}
+
+	div.dish_title_expand
+	{
+		padding: 0;
+		padding-left: 1%;
+		margin:0;
+		width: 60%;
+		font-size: 150%;
+		color: #dc4e00;
+		display:inline-block;
+		vertical-align: top;
+		
 	}
 	div.dish_about
 	{
@@ -575,8 +624,17 @@
 		padding-left: 0.5%;
 		color: #525252;
 		float: left;
+		font-size: 100%;
 	}
-
+	div.dish_about_expand
+	{
+		width: 90%;
+		display:inline-block;
+		padding-left: 0.5%;
+		color: #525252;
+		float: left;
+		font-size: 100%;
+	}
 	div.full_info
 	{
 
@@ -826,6 +884,7 @@
 	.comment > p
 	{
 		padding: 0% 1%;
+		font-size: 95%;
 	}
 
 	.comment > p:first-child
@@ -884,37 +943,37 @@
 	}
 	div.question
 	{
-		vertical-align: top;
-		display: inline-block;
-		font-size: 200%;
+		/*vertical-align: top;
+		display: inline-block;*/
+		font-size: 30px;
 		color:#909090;
 		padding: 0.5% 2% 0% 2%;
 		cursor: pointer;
-		/*border-bottom: 2px dashed #D6D0A3;*/
 		width:80%;
 
 
 	}
-
+		div.opener
+	{
+		/*vertical-align: top;
+		display: inline-block;*/
+		/*float:right;*/
+		cursor:pointer;
+		margin-top: -5px;
+		right:0;
+		position: absolute;
+	}
 
 
 	div.answer
 	{
 		display:block;
-		font-size: 150%;
+		font-size: 20px;
 		color: #a1a1a1;
 		padding: 1% 4%;
 	}
 
-	div.opener
-	{
-		vertical-align: top;
-		display: inline-block;
-		/*float:right;*/
-		cursor:pointer;
-		text-align: right;
-		width:14%;
-	}
+
 
 	div.half_column
 	{
