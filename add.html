@@ -1,6 +1,6 @@
 <div class="title">New recipe</div>
-<input name="name" type="text" placeholder="Name">
 <input name="email" type="text" placeholder="Email">
+<input name="name" type="text" placeholder="Name">
 <input name="title" type="text" placeholder="Title">
 <textarea class="description" placeholder="Description"></textarea>
 
@@ -8,8 +8,8 @@
 
 
 <div class="photo_button"><!--+PHOTO-->
-	<img src="icons/ic_plus_white_36dp.png">
-	<img src="icons/ic_camera_white_36dp.png">
+	<img src="static/icons/ic_plus_white_36dp.png">
+	<img src="static/icons/ic_camera_white_36dp.png">
 
 </div>
 <div class="photo_over">
@@ -39,8 +39,8 @@
 			</div><!--upl_photo-->
 
 			<div class="photo_button">
-				<img src="icons/ic_refresh_white_36dp.png">
-				<img src="icons/ic_camera_white_36dp.png">
+				<img src="static/icons/ic_refresh_white_36dp.png">
+				<img src="static/icons/ic_camera_white_36dp.png">
 			</div>
 			<div class="photo_over">
 				<input class="photo" type="file" name="photo_1" accept="image/*">	</input>
@@ -100,6 +100,14 @@
 <select size="1" name="cuisine">
 	<option>Cuisine</option>
 	<option>Italian</option>
+</select>
+<div class="title">Meal</div>
+<div class="hint">To select several options use Ctrl-button</div>
+<select class="meal" multiple size="4">
+    <option>Breakfest</option>
+    <option>Lunch</option>
+    <option>Dinner</option>
+    <option>Supper</option>
 </select>
 <!--<div class="error_message">Error message!</div>-->
 <div class="ok">Add</div>

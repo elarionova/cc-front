@@ -1,0 +1,155 @@
+<html>
+	<head>
+	    <link rel="stylesheet" type="text/css" href="style.css">
+	    <link rel="stylesheet" type="text/css" href="m_style.css">
+	    <link rel="shortcut icon" href="/static/icons/favicon.ico" type="image/x-icon">
+	</head>
+	<body>
+		<div class="main_banner">
+			<div class="header"><!--<div class="header header_fixed">-->
+				<div class = "header_cell">
+					<div class="header_img"><img src="static/icons/ic_search_white_36dp.png"></div>
+					<div class="header_title">Search</div>
+				</div>
+				<div class = "header_cell">
+					<div class="header_img"><img src="static/icons/ic_note_add_white_36dp.png"></div>
+					<div class="header_title">Add recipe</div>
+				</div>
+				<div class = "header_cell">
+					<div class="header_img"><img src="static/icons/ic_view_list_white_36dp.png"></div>
+					<div class="header_title">All recipes</div>
+				</div>
+				<div class = "header_cell">
+					<div class="header_img"><img src="static/icons/ic_favorite_white_36dp.png"></div>
+					<div class="header_title">My favourites</div>
+				</div>
+				<div class = "header_cell">
+					<div class="header_img"><img src="static/icons/ic_info_outline_white_36dp.png"></div>
+					<div class="header_title">Support</div>
+				</div>
+				<div class = "header_cell">
+					<div class="header_img"><img src="static/icons/ic_login_white_48dp.png"></div>
+					<div class="header_title">Sign in/up</div>
+				</div>
+		</div>
+			
+			<!--<img src="i/11145140.jpg">-->	
+		</div>
+		<div class="content_wrapper">
+		    <div class="content">
+		    <h1>Add recipe</h1>
+		    <div class="content_first_part">
+		       <div class="title">Common information</div>
+		       <input name="email" type="text" placeholder="Email">
+               <input name="name" type="text" placeholder="Name">
+               <input name="title" type="text" placeholder="Title">
+               <textarea class="description" placeholder="Description"></textarea>
+
+               <div class="title">Main photo</div>
+
+
+                <div class="photo_button"><!--+PHOTO-->
+	                <img src="static/icons/ic_plus_white_36dp.png">
+                	<img src="static/icons/ic_camera_white_36dp.png">
+
+                </div>
+                <div class="photo_over">
+                	<input class="photo" type="file" name="photo_1" accept="image/*">	</input>
+                </div>
+
+
+                <div name="steps" class="steps">
+                	<div class="step" name="step1">
+    		            <div class="cross"></div>
+    		        	<div class="title">Step #1</div>
+    		        	
+    		            <textarea class="description" placeholder="Description"></textarea>
+    
+    		        	<div class="title">Photo for Step #1</div>
+    
+            			<div class="upl_photo">
+            				<img src="i/cavy_ref.jpg">
+            			</div><!--upl_photo-->
+    
+            			<div class="photo_button">
+            				<img src="static/icons/ic_refresh_white_36dp.png">
+            				<img src="static/icons/ic_camera_white_36dp.png">
+            			</div>
+            			<div class="photo_over">
+            				<input class="photo" type="file" name="photo_1" accept="image/*">	</input>
+            			</div>
+                	</div><!--step, step1-->
+        
+                </div> <!--steps-->
+
+            	<div class="adding">
+            		<div class="add_plus"></div>
+            		<div class="title">Step #2</div>
+            		
+            	</div>
+ 
+		        
+		    </div><!--content_first_part-->
+		    <div class="content_second_part">
+		        <div class="title">Ingredients</div>
+                
+                <input name="ing1" type="text" placeholder="Type ingredients" class="ingredients">
+                <div class="plus" onclick="add();">+</div>
+                <input name="ing1" type="text" placeholder="Type ingredients" class="ingredients">
+                <div class="minus" onclick="add();">-</div>
+                <div class="vegan">
+                	<input type="checkbox" id="check" value="vegetarian" class="checkbox">
+                	<label for="check">Vegetarian</label>
+                </div>
+                
+                <div class="title">Max Time for cooking</div>
+                <div class = "time">
+                	<div class="time_cell" name="hours">00h</div>
+                	<div class="time_cell" name="minutes">00m</div>
+                	<!--<div class="time_cell" name="seconds">00s</div>-->
+                </div><!--time-->
+                
+                <div class="time_bar">
+                	<input type="range" name="time">
+                <!--	<div class = "time_controller" name="min_time">-</div>
+                	<div class="time_frame">
+                		<div class="time_fulfill"></div>
+                	</div>
+                	<div class = "time_controller" name="min_time">+</div>
+                -->
+                </div><!--time_bar-->
+                
+                
+                <select size="1" name="category">
+                	<option>Category</option>
+                	<option>Soup</option>
+                	<option>Salad</option>
+                	<option>Snacks</option>
+                </select>
+                
+                <select size="1" name="cuisine">
+                	<option>Cuisine</option>
+                	<option>Italian</option>
+                </select>
+                <div class="title">Meal</div>
+                <div class="hint">To select several options use Ctrl-button</div>
+                <select class="meal" multiple size="4">
+                    <option>Breakfest</option>
+                    <option>Lunch</option>
+                    <option>Dinner</option>
+                    <option>Supper</option>
+                </select>
+		    </div><!--content_second_part-->
+		        
+		    <div class="ok">Add</div>
+		    
+		    
+		    </div><!--content-->
+		    <!-- <div class="content_ad">
+		    	Block for dishes of the day
+		    </div>-->
+		  </div><!--content_wrapper-->
+
+	</body>
+
+</html>

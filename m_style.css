@@ -1,11 +1,121 @@
-/*iPad*/
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-	
-
-}
 
 /*iPad in landscape*/
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) { 
+	div.desktop_search:first-child
+	{
+		width:100%;
+	}
+	div.desktop_search:last-child
+	{
+		width:100%;
+	}
+	div.content_first_part, div.content_second_part
+	{
+		display: block;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	h1
+	{
+		margin-left: 5%;
+	}
+	div.section_title
+	{
+		display:block;
+		background-color: #BD4504;
+		opacity:0.8;
+		cursor:pointer;
+		-webkit-user-select: none;
+	}
+	div.hint
+	{
+		display:none;
+	}
+	div.main_banner
+	{
+		height: 300px;
+	}
+	div.header
+	{
+		width: 100%;
+		margin:0;
+		padding:0;
+		background-color: #BD4504;
+		height: auto;
+		box-shadow: 0 0 15px #000000;
+		display:inline-block;
+		position: fixed;
+		z-index: 1;
+		border-radius:none;
+
+	}
+
+	div.header_cell
+	{
+		margin-right:0.2%;
+		width: 16.5%;
+		padding-top: 0.5%;
+		padding-bottom: 0.5%;
+		float:left;
+		background-color: #dc4e00;
+		color: #cccccc;
+		text-align: center;
+		-webkit-user-select: none;
+		display:inline-block;
+
+	}
+	div.header_cell > img
+	{
+		opacity: 0.95;
+		width:auto;
+	}
+
+	div.header_title
+	{
+		display:none;
+	}
+
+	div.header_cell:last-child
+	{
+		border:none;
+		margin-right:0;
+		width:16.5%;
+		border-radius:0;
+	}
+	div.header_cell:first-child
+	{
+		border-radius:0;
+	}
+
+	div.header_cell:hover, div.active_header_cell
+	{
+		background-color: #F27530;
+		cursor:pointer;
+		color: #FFFFFF;
+	}
+	div.content
+	{
+		width:100%;
+		padding:0;
+		margin:0;
+	}
+	div.content_ad
+	{
+		display:none;
+	}
+	div.title, div.dish_title, div.dish_title_expand
+	{
+		font-size:35px;
+	}
+	input[type="checkbox"] + label 
+	{
+       	font-size: 30px;
+	}
+	div.gal_arrow + p, div.title+p 
+	{
+		font-size:20px;
+	}
 	.comment > p 
 	{
     	font-size: 80%;
@@ -18,11 +128,133 @@
 	{
 		font-size: 200%;
 	}
+	div.dish_about, div.dish_about_expand
+	{
+		font-size:20px;
+	}
 
 }
 
 /*iPad in portrait*/
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
+	div.desktop_search:first-child
+	{
+		width:100%;
+	}
+	div.desktop_search:last-child
+	{
+		width:100%;
+	}
+	div.content_first_part, div.content_second_part
+	{
+		display: block;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	h1
+	{
+		margin-left: 5%;
+	}
+	div.section_title
+	{
+		display:block;
+		background-color: #BD4504;
+		opacity:0.8;
+		cursor:pointer;
+		-webkit-user-select: none;
+	}
+	div.hint
+	{
+		display:none;
+	}
+	div.main_banner
+	{
+		height: 300px;
+	}
+	div.header
+	{
+		width: 100%;
+		margin:0;
+		padding:0;
+		background-color: #BD4504;
+		height: auto;
+		box-shadow: 0 0 15px #000000;
+		display:inline-block;
+		position: fixed;
+		z-index: 1;
+		border-radius:none;
+
+	}
+
+	div.header_cell
+	{
+		margin-right:0.2%;
+		width: 16.5%;
+		padding-top: 0.5%;
+		padding-bottom: 0.5%;
+		float:left;
+		background-color: #dc4e00;
+		color: #cccccc;
+		text-align: center;
+		-webkit-user-select: none;
+		display:inline-block;
+
+	}
+	div.header_cell > img
+	{
+		opacity: 0.95;
+		width:auto;
+	}
+	div.header_title
+	{
+		display:none;
+	}
+	
+	div.header_cell:last-child
+	{
+		border:none;
+		margin-right:0;
+		width:16.5%;
+		border-radius:0;
+	}
+	div.header_cell:first-child
+	{
+		border-radius:0;
+	}
+
+	div.header_cell:hover, div.active_header_cell
+	{
+		background-color: #F27530;
+		cursor:pointer;
+		color: #FFFFFF;
+	}
+	div.content
+	{
+		width:100%;
+		padding:0;
+		margin:0;
+	}
+	div.content_ad
+	{
+		display:none;
+	}
+	div.title, div.dish_title, div.dish_title_expand
+	{
+		font-size:35px;
+	}
+	input[type="checkbox"] + label 
+	{
+       	font-size: 30px;
+	}
+	div.dish_about, div.dish_about_expand
+	{
+		font-size:20px;
+	}
+	div.gal_arrow + p, div.title+p 
+	{
+		font-size:20px;
+	}
 	.comment > p 
 	{
     	font-size: 80%;
@@ -41,6 +273,109 @@
 
 /*Galaxy Note, Galaxy S5 in landscape*/
 @media only screen and (min-device-width : 360px) and (max-device-width : 640px) and (orientation : landscape) { 
+	div.desktop_search:first-child
+	{
+		width:100%;
+	}
+	div.desktop_search:last-child
+	{
+		width:100%;
+	}
+	div.content_first_part, div.content_second_part
+	{
+		display: block;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	h1
+	{
+		margin-left: 5%;
+	}
+	div.section_title
+	{
+		display:block;
+		background-color: #BD4504;
+		opacity:0.8;
+		cursor:pointer;
+		-webkit-user-select: none;
+	}
+	div.hint
+	{
+		display:none;
+	}
+	div.main_banner
+	{
+		height: 300px;
+	}
+	div.header
+	{
+		width: 100%;
+		margin:0;
+		padding:0;
+		background-color: #BD4504;
+		height: auto;
+		box-shadow: 0 0 15px #000000;
+		display:inline-block;
+		position: fixed;
+		z-index: 1;
+		border-radius:none;
+
+	}
+
+	div.header_cell
+	{
+		margin-right:0.2%;
+		width: 16.5%;
+		padding-top: 1%;
+		padding-bottom: 1%;
+		float:left;
+		background-color: #dc4e00;
+		color: #cccccc;
+		text-align: center;
+		-webkit-user-select: none;
+		display:inline-block;
+
+	}
+	div.header_cell > img
+	{
+		opacity: 0.95;
+		width:auto;
+	}
+	
+	div.header_title
+	{
+		display:none;
+	}
+	
+	div.header_cell:last-child
+	{
+		border:none;
+		margin-right:0;
+		width:16.5%;
+		border-radius:0;
+	}
+	div.header_cell:first-child
+	{
+		border-radius:0;
+	}
+
+	div.header_cell:hover, div.active_header_cell
+	{
+		background-color: #F27530;
+		cursor:pointer;
+		color: #FFFFFF;
+	}
+	div.content_ad
+	{
+		display:none;
+	}
+	div.content
+	{
+		width:100%;
+		padding:0;
+		margin:0;
+	}
 	.comment > p 
 	{
     	font-size: 80%;
@@ -63,6 +398,121 @@
 
 /*Galaxy Note, Galaxy S5 in portrait*/
 @media only screen and (min-device-width : 360px) and (max-device-width : 640px) and (orientation : portrait){
+	div.desktop_search:first-child
+	{
+		width:100%;
+	}
+	div.desktop_search:last-child
+	{
+		width:100%;
+	}
+	div.content_first_part, div.content_second_part
+	{
+		display: block;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	h1
+	{
+		margin-left: 5%;
+	}
+	div.section_title
+	{
+		display:block;
+		background-color: #BD4504;
+		opacity:0.8;
+		cursor:pointer;
+		-webkit-user-select: none;
+	}
+	div.hint
+	{
+		display:none;
+	}
+	div.main_banner
+	{
+		height: 300px;
+	}
+	div.header
+	{
+		width: 100%;
+		margin:0;
+		padding:0;
+		background-color: #BD4504;
+		height: auto;
+		box-shadow: 0 0 15px #000000;
+		display:inline-block;
+		position: fixed;
+		z-index: 1;
+		border-radius:none;
+
+	}
+
+	div.header_cell
+	{
+		margin-right:0.2%;
+		width: 16.5%;
+		padding-top: 1%;
+		padding-bottom: 1%;
+		float:left;
+		background-color: #dc4e00;
+		color: #cccccc;
+		text-align: center;
+		-webkit-user-select: none;
+		display:inline-block;
+
+	}
+	div.header_cell > img
+	{
+		opacity: 0.95;
+		width:auto;
+	}
+	
+	div.header_title
+	{
+		display:none;
+	}
+	
+	div.header_cell:last-child
+	{
+		border:none;
+		margin-right:0;
+		width:16.5%;
+		border-radius:0;
+	}
+	div.header_cell:first-child
+	{
+		border-radius:0;
+	}
+
+	div.header_cell:hover, div.active_header_cell
+	{
+		background-color: #F27530;
+		cursor:pointer;
+		color: #FFFFFF;
+	}
+	div.content
+	{
+		width:100%;
+		padding:0;
+		margin:0;
+	}
+	div.content_ad
+	{
+		display:none;
+	}
+	div.title, div.dish_title, div.dish_title_expand
+	{
+		font-size:43px;
+	}
+	input[type="checkbox"] + label 
+	{
+       	font-size: 40px;
+	}
+	div.gal_arrow + p, div.title+p 
+	{
+		font-size:20px;
+	}
 	.comment > p 
 	{
     	font-size: 80%;
@@ -124,6 +574,109 @@
 
 /*Nexus 5X in landscape*/
 @media only screen and (min-device-width : 411px) and (max-device-width : 731px) and (orientation : landscape) { 
+	div.desktop_search:first-child
+	{
+		width:100%;
+	}
+	div.desktop_search:last-child
+	{
+		width:100%;
+	}
+	div.content_first_part, div.content_second_part
+	{
+		display: block;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	h1
+	{
+		margin-left: 5%;
+	}
+	div.section_title
+	{
+		display:block;
+		background-color: #BD4504;
+		opacity:0.8;
+		cursor:pointer;
+		-webkit-user-select: none;
+	}
+	div.hint
+	{
+		display:none;
+	}
+	div.main_banner
+	{
+		height: 300px;
+	}
+	div.header
+	{
+		width: 100%;
+		margin:0;
+		padding:0;
+		background-color: #BD4504;
+		height: auto;
+		box-shadow: 0 0 15px #000000;
+		display:inline-block;
+		position: fixed;
+		z-index: 1;
+		border-radius:none;
+
+	}
+
+	div.header_cell
+	{
+		margin-right:0.2%;
+		width: 16.5%;
+		padding-top: 1%;
+		padding-bottom: 1%;
+		float:left;
+		background-color: #dc4e00;
+		color: #cccccc;
+		text-align: center;
+		-webkit-user-select: none;
+		display:inline-block;
+
+	}
+	div.header_cell > img
+	{
+		opacity: 0.95;
+		width:auto;
+	}
+	
+	div.header_title
+	{
+		display:none;
+	}
+	
+	div.header_cell:last-child
+	{
+		border:none;
+		margin-right:0;
+		width:16.5%;
+		border-radius:0;
+	}
+	div.header_cell:first-child
+	{
+		border-radius:0;
+	}
+
+	div.header_cell:hover, div.active_header_cell
+	{
+		background-color: #F27530;
+		cursor:pointer;
+		color: #FFFFFF;
+	}
+	div.content
+	{
+		width:100%;
+		padding:0;
+		margin:0;
+	}
+	div.content_ad
+	{
+		display:none;
+	}
 	.comment > p 
 	{
     	font-size: 80%;
@@ -149,6 +702,121 @@
 
 /*Nexus 5X in portrait*/
 @media only screen and (min-device-width : 411px) and (max-device-width : 731px) and (orientation : portrait){
+	div.desktop_search:first-child
+	{
+		width:100%;
+	}
+	div.desktop_search:last-child
+	{
+		width:100%;
+	}
+	div.content_first_part, div.content_second_part
+	{
+		display: block;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	h1
+	{
+		margin-left: 5%;
+	}
+	div.section_title
+	{
+		display:block;
+		background-color: #BD4504;
+		opacity:0.8;
+		cursor:pointer;
+		-webkit-user-select: none;
+	}
+	div.hint
+	{
+		display:none;
+	}
+	div.main_banner
+	{
+		height: 300px;
+	}
+	div.header
+	{
+		width: 100%;
+		margin:0;
+		padding:0;
+		background-color: #BD4504;
+		height: auto;
+		box-shadow: 0 0 15px #000000;
+		display:inline-block;
+		position: fixed;
+		z-index: 1;
+		border-radius:none;
+
+	}
+
+	div.header_cell
+	{
+		margin-right:0.2%;
+		width: 16.5%;
+		padding-top: 1%;
+		padding-bottom: 1%;
+		float:left;
+		background-color: #dc4e00;
+		color: #cccccc;
+		text-align: center;
+		-webkit-user-select: none;
+		display:inline-block;
+
+	}
+	div.header_cell > img
+	{
+		opacity: 0.95;
+		width:auto;
+	}
+	
+	div.header_title
+	{
+		display:none;
+	}
+	
+	div.header_cell:last-child
+	{
+		border:none;
+		margin-right:0;
+		width:16.5%;
+		border-radius:0;
+	}
+	div.header_cell:first-child
+	{
+		border-radius:0;
+	}
+
+	div.header_cell:hover, div.active_header_cell
+	{
+		background-color: #F27530;
+		cursor:pointer;
+		color: #FFFFFF;
+	}
+	div.content
+	{
+		width:100%;
+		padding:0;
+		margin:0;
+	}
+	div.content_ad
+	{
+		display:none;
+	}
+	div.title, div.dish_title, div.dish_title_expand
+	{
+		font-size:43px;
+	}
+	input[type="checkbox"] + label 
+	{
+       	font-size: 40px;
+	}
+	div.gal_arrow + p, div.title+p 
+	{
+		font-size:20px;
+	}
 	.comment > p 
 	{
     	font-size: 80%;
@@ -210,6 +878,109 @@
 
 /*iPhone 5 in landscape*/
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) { 
+	div.desktop_search:first-child
+	{
+		width:100%;
+	}
+	div.desktop_search:last-child
+	{
+		width:100%;
+	}
+	div.content_first_part, div.content_second_part
+	{
+		display: block;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	h1
+	{
+		margin-left: 5%;
+	}
+	div.section_title
+	{
+		display:block;
+		background-color: #BD4504;
+		opacity:0.8;
+		cursor:pointer;
+		-webkit-user-select: none;
+	}
+	div.hint
+	{
+		display:none;
+	}
+	div.main_banner
+	{
+		height: 300px;
+	}
+	div.header
+	{
+		width: 100%;
+		margin:0;
+		padding:0;
+		background-color: #BD4504;
+		height: auto;
+		box-shadow: 0 0 15px #000000;
+		display:inline-block;
+		position: fixed;
+		z-index: 1;
+		border-radius:none;
+
+	}
+
+	div.header_cell
+	{
+		margin-right:0.2%;
+		width: 16.5%;
+		padding-top: 1%;
+		padding-bottom: 1%;
+		float:left;
+		background-color: #dc4e00;
+		color: #cccccc;
+		text-align: center;
+		-webkit-user-select: none;
+		display:inline-block;
+
+	}
+	div.header_cell > img
+	{
+		opacity: 0.95;
+		width:auto;
+	}
+	
+	div.header_title
+	{
+		display:none;
+	}
+	
+	div.header_cell:last-child
+	{
+		border:none;
+		margin-right:0;
+		width:16.5%;
+		border-radius:0;
+	}
+	div.header_cell:first-child
+	{
+		border-radius:0;
+	}
+
+	div.header_cell:hover, div.active_header_cell
+	{
+		background-color: #F27530;
+		cursor:pointer;
+		color: #FFFFFF;
+	}
+	div.content
+	{
+		width:100%;
+		padding:0;
+		margin:0;
+	}
+	div.content_ad
+	{
+		display:none;
+	}
 	.comment > p 
 	{
     	font-size: 80%;
@@ -235,6 +1006,121 @@
 
 /*iPhone 5 in portrait*/
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait){
+	div.desktop_search:first-child
+	{
+		width:100%;
+	}
+	div.desktop_search:last-child
+	{
+		width:100%;
+	}
+	div.content_first_part, div.content_second_part
+	{
+		display: block;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	h1
+	{
+		margin-left: 5%;
+	}
+	div.section_title
+	{
+		display:block;
+		background-color: #BD4504;
+		opacity:0.8;
+		cursor:pointer;
+		-webkit-user-select: none;
+	}
+	div.hint
+	{
+		display:none;
+	}
+	div.main_banner
+	{
+		height: 300px;
+	}
+	div.header
+	{
+		width: 100%;
+		margin:0;
+		padding:0;
+		background-color: #BD4504;
+		height: auto;
+		box-shadow: 0 0 15px #000000;
+		display:inline-block;
+		position: fixed;
+		z-index: 1;
+		border-radius:none;
+
+	}
+
+	div.header_cell
+	{
+		margin-right:0.2%;
+		width: 16.5%;
+		padding-top: 1%;
+		padding-bottom: 1%;
+		float:left;
+		background-color: #dc4e00;
+		color: #cccccc;
+		text-align: center;
+		-webkit-user-select: none;
+		display:inline-block;
+
+	}
+	div.header_cell > img
+	{
+		opacity: 0.95;
+		width:auto;
+	}
+	
+	div.header_title
+	{
+		display:none;
+	}
+	
+	div.header_cell:last-child
+	{
+		border:none;
+		margin-right:0;
+		width:16.5%;
+		border-radius:0;
+	}
+	div.header_cell:first-child
+	{
+		border-radius:0;
+	}
+
+	div.header_cell:hover, div.active_header_cell
+	{
+		background-color: #F27530;
+		cursor:pointer;
+		color: #FFFFFF;
+	}
+	div.content
+	{
+		width:100%;
+		padding:0;
+		margin:0;
+	}
+	div.content_ad
+	{
+		display:none;
+	}
+	div.title, div.dish_title, div.dish_title_expand
+	{
+		font-size:43px;
+	}
+	input[type="checkbox"] + label 
+	{
+       	font-size: 40px;
+	}
+	div.gal_arrow + p, div.title+p 
+	{
+		font-size:20px;
+	}
 	.comment > p 
 	{
     	font-size: 80%;
@@ -295,6 +1181,109 @@
 
 /*iPhone 6 in landscape*/
 @media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : landscape) { 
+	div.desktop_search:first-child
+	{
+		width:100%;
+	}
+	div.desktop_search:last-child
+	{
+		width:100%;
+	}
+	div.content_first_part, div.content_second_part
+	{
+		display: block;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	h1
+	{
+		margin-left: 5%;
+	}
+	div.section_title
+	{
+		display:block;
+		background-color: #BD4504;
+		opacity:0.8;
+		cursor:pointer;
+		-webkit-user-select: none;
+	}
+	div.hint
+	{
+		display:none;
+	}
+	div.main_banner
+	{
+		height: 300px;
+	}
+	div.header
+	{
+		width: 100%;
+		margin:0;
+		padding:0;
+		background-color: #BD4504;
+		height: auto;
+		box-shadow: 0 0 15px #000000;
+		display:inline-block;
+		position: fixed;
+		z-index: 1;
+		border-radius:none;
+
+	}
+
+	div.header_cell
+	{
+		margin-right:0.2%;
+		width: 16.5%;
+		padding-top: 1%;
+		padding-bottom: 1%;
+		float:left;
+		background-color: #dc4e00;
+		color: #cccccc;
+		text-align: center;
+		-webkit-user-select: none;
+		display:inline-block;
+
+	}
+	div.header_cell > img
+	{
+		opacity: 0.95;
+		width:auto;
+	}
+	
+	div.header_title
+	{
+		display:none;
+	}
+	
+	div.header_cell:last-child
+	{
+		border:none;
+		margin-right:0;
+		width:16.5%;
+		border-radius:0;
+	}
+	div.header_cell:first-child
+	{
+		border-radius:0;
+	}
+
+	div.header_cell:hover, div.active_header_cell
+	{
+		background-color: #F27530;
+		cursor:pointer;
+		color: #FFFFFF;
+	}
+	div.content
+	{
+		width:100%;
+		padding:0;
+		margin:0;
+	}
+	div.content_ad
+	{
+		display:none;
+	}
 	.comment > p 
 	{
     	font-size: 80%;
@@ -320,6 +1309,121 @@
 
 /*iPhone 6 in portrait*/
 @media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait){
+	div.desktop_search:first-child
+	{
+		width:100%;
+	}
+	div.desktop_search:last-child
+	{
+		width:100%;
+	}
+	div.content_first_part, div.content_second_part
+	{
+		display: block;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	h1
+	{
+		margin-left: 5%;
+	}
+	div.section_title
+	{
+		display:block;
+		background-color: #BD4504;
+		opacity:0.8;
+		cursor:pointer;
+		-webkit-user-select: none;
+	}
+	div.hint
+	{
+		display:none;
+	}
+	div.main_banner
+	{
+		height: 300px;
+	}
+	div.header
+	{
+		width: 100%;
+		margin:0;
+		padding:0;
+		background-color: #BD4504;
+		height: auto;
+		box-shadow: 0 0 15px #000000;
+		display:inline-block;
+		position: fixed;
+		z-index: 1;
+		border-radius:none;
+
+	}
+
+	div.header_cell
+	{
+		margin-right:0.2%;
+		width: 16.5%;
+		padding-top: 1%;
+		padding-bottom: 1%;
+		float:left;
+		background-color: #dc4e00;
+		color: #cccccc;
+		text-align: center;
+		-webkit-user-select: none;
+		display:inline-block;
+
+	}
+	div.header_cell > img
+	{
+		opacity: 0.95;
+		width:auto;
+	}
+	
+	div.header_title
+	{
+		display:none;
+	}
+	
+	div.header_cell:last-child
+	{
+		border:none;
+		margin-right:0;
+		width:16.5%;
+		border-radius:0;
+	}
+	div.header_cell:first-child
+	{
+		border-radius:0;
+	}
+
+	div.header_cell:hover, div.active_header_cell
+	{
+		background-color: #F27530;
+		cursor:pointer;
+		color: #FFFFFF;
+	}
+	div.content
+	{
+		width:100%;
+		padding:0;
+		margin:0;
+	}
+	div.content_ad
+	{
+		display:none;
+	}
+	div.title, div.dish_title, div.dish_title_expand
+	{
+		font-size:43px;
+	}
+	input[type="checkbox"] + label 
+	{
+       	font-size: 40px;
+	}
+	div.gal_arrow + p, div.title+p 
+	{
+		font-size:20px;
+	}
 	.comment > p 
 	{
     	font-size: 80%;
@@ -380,6 +1484,109 @@
 
 /*iPhone 6+ in landscape*/
 @media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : landscape) { 
+	div.desktop_search:first-child
+	{
+		width:100%;
+	}
+	div.desktop_search:last-child
+	{
+		width:100%;
+	}
+	div.content_first_part, div.content_second_part
+	{
+		display: block;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	h1
+	{
+		margin-left: 5%;
+	}
+	div.section_title
+	{
+		display:block;
+		background-color: #BD4504;
+		opacity:0.8;
+		cursor:pointer;
+		-webkit-user-select: none;
+	}
+	div.hint
+	{
+		display:none;
+	}
+	div.main_banner
+	{
+		height: 300px;
+	}
+	div.header
+	{
+		width: 100%;
+		margin:0;
+		padding:0;
+		background-color: #BD4504;
+		height: auto;
+		box-shadow: 0 0 15px #000000;
+		display:inline-block;
+		position: fixed;
+		z-index: 1;
+		border-radius:none;
+
+	}
+
+	div.header_cell
+	{
+		margin-right:0.2%;
+		width: 16.5%;
+		padding-top: 1%;
+		padding-bottom: 1%;
+		float:left;
+		background-color: #dc4e00;
+		color: #cccccc;
+		text-align: center;
+		-webkit-user-select: none;
+		display:inline-block;
+
+	}
+	div.header_cell > img
+	{
+		opacity: 0.95;
+		width:auto;
+	}
+	
+	div.header_title
+	{
+		display:none;
+	}
+	
+	div.header_cell:last-child
+	{
+		border:none;
+		margin-right:0;
+		width:16.5%;
+		border-radius:0;
+	}
+	div.header_cell:first-child
+	{
+		border-radius:0;
+	}
+
+	div.header_cell:hover, div.active_header_cell
+	{
+		background-color: #F27530;
+		cursor:pointer;
+		color: #FFFFFF;
+	}
+	div.content
+	{
+		width:100%;
+		padding:0;
+		margin:0;
+	}
+	div.content_ad
+	{
+		display:none;
+	}
 	.comment > p 
 	{
     	font-size: 80%;
@@ -405,6 +1612,121 @@
 
 /*iPhone 6+ in portrait*/
 @media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait){
+	div.desktop_search:first-child
+	{
+		width:100%;
+	}
+	div.desktop_search:last-child
+	{
+		width:100%;
+	}
+	div.content_first_part, div.content_second_part
+	{
+		display: block;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	h1
+	{
+		margin-left: 5%;
+	}
+	div.section_title
+	{
+		display:block;
+		background-color: #BD4504;
+		opacity:0.8;
+		cursor:pointer;
+		-webkit-user-select: none;
+	}
+	div.hint
+	{
+		display:none;
+	}
+	div.main_banner
+	{
+		height: 300px;
+	}
+	div.header
+	{
+		width: 100%;
+		margin:0;
+		padding:0;
+		background-color: #BD4504;
+		height: auto;
+		box-shadow: 0 0 15px #000000;
+		display:inline-block;
+		position: fixed;
+		z-index: 1;
+		border-radius:none;
+
+	}
+
+	div.header_cell
+	{
+		margin-right:0.2%;
+		width: 16.5%;
+		padding-top: 1%;
+		padding-bottom: 1%;
+		float:left;
+		background-color: #dc4e00;
+		color: #cccccc;
+		text-align: center;
+		-webkit-user-select: none;
+		display:inline-block;
+
+	}
+	div.header_cell > img
+	{
+		opacity: 0.95;
+		width:auto;
+	}
+	
+	div.header_title
+	{
+		display:none;
+	}
+	
+	div.header_cell:last-child
+	{
+		border:none;
+		margin-right:0;
+		width:16.5%;
+		border-radius:0;
+	}
+	div.header_cell:first-child
+	{
+		border-radius:0;
+	}
+
+	div.header_cell:hover, div.active_header_cell
+	{
+		background-color: #F27530;
+		cursor:pointer;
+		color: #FFFFFF;
+	}
+	div.content
+	{
+		width:100%;
+		padding:0;
+		margin:0;
+	}
+	div.content_ad
+	{
+		display:none;
+	}
+	div.title, div.dish_title, div.dish_title_expand
+	{
+		font-size:40px;
+	}
+	input[type="checkbox"] + label 
+	{
+       	font-size: 40px;
+	}
+	div.gal_arrow + p, div.title+p 
+	{
+		font-size:20px;
+	}
 	.comment > p 
 	{
     	font-size: 80%;
